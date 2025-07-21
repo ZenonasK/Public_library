@@ -60,4 +60,4 @@ Invoke the batch with the list of bus record IDs:
 ```apex
 List<Id> busIds = [SELECT Id FROM Bus__c WHERE ...].Id;
 BusOccupation batch = new BusOccupation(busIds);
-Database.executeBatch(batch, 10); // batch size can be adjusted
+Database.executeBatch(batch, 10); 
